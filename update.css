@@ -1,0 +1,125 @@
+
+/* Orange Title Bar */
+.orange-title-bar {
+    background: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 80px 20px 70px;
+}
+
+.orange-title-bar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.orange-title-bar h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* Blog Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.blog-card h3 {
+    font-size: 20px;
+    margin: 0 0 15px 0;
+    color: #222;
+    line-height: 1.4;
+}
+
+.blog-card p {
+    font-size: 15px;
+    color: #666;
+    margin: 0 0 20px 0;
+    flex-grow: 1;
+}
+
+.read-more {
+    display: inline-block;
+    color: #232322;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: auto;
+    padding: 8px ;
+    width: 100px;
+}
+
+
+
+.meta {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #999;
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pagination a {
+    color: #ff9800;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid #ff9800;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.pagination a:hover {
+    background: #ff9800;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-header h2 {
+        font-size: 28px;
+    }
+}

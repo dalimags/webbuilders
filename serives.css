@@ -1,0 +1,307 @@
+
+/* Orange Title Bar */
+.orange-title-bar {
+    background: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 80px 20px 70px;
+}
+
+.orange-title-bar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.orange-title-bar h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+
+.web-section {
+    padding: 80px 0;
+    overflow: hidden; 
+}
+
+.responsive-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.content { width: 55%; }
+.content h1 span {
+    color: #f97316;
+}
+.subtitle {
+    color: #3b82f6;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.image-box { width: 40%; }
+.image-box img { max-width: 100%; height: auto; }
+
+@media (max-width: 768px) {
+    .responsive-container {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .content, .image-box {
+        width: 100%; 
+    }
+
+    .content h1 {
+        font-size: 26px !important; 
+        line-height: 1.3;
+        word-wrap: break-word; 
+        margin-bottom: 15px;
+    }
+
+    .content p {
+        font-size: 16px !important; 
+        line-height: 1.6;
+        text-align: justify; 
+    }
+
+    .subtitle {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .image-box {
+        margin-top: 20px;
+        order: -1;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 22px !important;
+    }
+    .content p {
+        font-size: 15px !important;
+    }
+}
+/* =========================
+   PRICING HEADER
+========================= */
+.pricing-header {
+    padding: 70px 20px 40px;
+    text-align: center;
+}
+
+.pricing-subtitle {
+    color: #f97316;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.pricing-header h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.pricing-header p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 15px;
+    color: #555;
+}
+
+/* =========================
+   PRICING CARDS
+========================= */
+.pricing-section {
+    padding-bottom: 80px;
+}
+
+.pricing-container {
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.pricing-card {
+    border: 1px solid #eee;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.price {
+    color: #1a1a19;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.pricing-card ul {
+    list-style: none;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.pricing-card ul li.disable {
+    color: #0f0f0f;
+}
+
+.renew {
+    font-size: 12px;
+    margin: 15px 0;
+}
+
+.pricing-card button {
+    border: 2px solid #212120;
+    background: none;
+    color: #121111;
+    padding: 10px 28px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.pricing-card button:hover {
+    background: #111110;
+    color: #fff;
+}
+.pricing-card:hover {
+    background: #f21660;   /* light pink */
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(216, 6, 111, 0.25);
+  
+}
+
+/* ===== RIGHT SIDE FORM ===== */
+.right-side {
+  flex: 1;
+  background: #ffffff;
+  padding: 50px;
+  box-shadow: 0 0 25px rgb(87, 87, 208);
+  border-radius: 10px;
+}
+
+/* ===== FORM GROUP ===== */
+.right-side .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+/* ===== LABEL ===== */
+.right-side label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* ===== INPUT & TEXTAREA ===== */
+.right-side input,
+.right-side textarea {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.right-side textarea {
+  resize: none;
+  height: 120px;
+}
+
+/* ===== FOCUS EFFECT ===== */
+.right-side input:focus,
+.right-side textarea:focus {
+  border-color: #f97316; 
+}
+
+/* ===== FILE UPLOAD ===== */
+.file-label {
+  display: inline-block;
+  padding: 12px 14px;
+  border: 1px dashed #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.file-label:hover {
+  border-color: #f97316;
+  color: #f97316;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: #151515;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #1b18e9;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .right-side {
+    padding: 25px;
+  }
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .orange-title-bar h1 {
+        font-size: 3rem;
+    }
+
+    .orange-title-bar {
+        padding: 60px 20px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .breadcrumbs {
+        font-size: 0.95rem;
+        padding: 12px 0;
+    }
+
+    .orange-title-bar h1 {
+        font-size: 2.4rem;
+    }
+
+    .orange-title-bar {
+        padding: 50px 15px 40px;
+    }
+}

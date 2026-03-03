@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+ 
+/* Orange Title Bar */
+.orange-title-bar {
+    background: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 80px 20px 70px;
+}
+
+.orange-title-bar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.orange-title-bar h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+header.main-header .container {
+    max-width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+    /* ── Main Content ────────────────────────────────────────── */
+    .main-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 30px;
+      background: white;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+      border-radius: 8px;
+      margin-top: -40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    h2 {
+      color: #010101;
+      font-size: 1.95rem;
+      margin: 55px 0 25px;
+      padding-bottom: 14px;
+      border-bottom: 3px solid #ff6a00;
+      font-weight: 700;
+    }
+
+    h3 {
+      color: #222;
+      font-size: 1.55rem;
+      margin: 40px 0 20px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.08rem;
+      margin-bottom: 22px;
+      color: #444;
+    }
+
+    strong {
+      color: #ff6a00;
+      font-weight: 700;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0 0 30px 0;
+      padding-left: 0;
+    }
+
+    ul li {
+      font-size: 1.06rem;
+      margin-bottom: 16px;
+      padding-left: 32px;
+      position: relative;
+    }
+
+    
+
+    .effective-date {
+      font-style: italic;
+      color: #555;
+      text-align: center;
+      font-size: 1.18rem;
+      margin: 0 0 50px;
+      padding: 15px;
+      background: #fff8f3;
+      border-left: 5px solid #ff6a00;
+      border-radius: 4px;
+    }
+
+    /* Responsive */
+    @media (max-width: 1050px) {
+      .mobile-toggle { display: block; }
+      .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      }
+      .nav-menu.active { display: flex; }
+      .nav-menu li a { padding: 14px 24px; font-size: 15.5px; }
+      .dropdown .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        border: none;
+        background: #f9f9f9;
+        display: none;
+        padding-left: 25px;
+      }
+      .dropdown.active .dropdown-menu { display: block; }
+    }
+
+    @media (max-width: 768px) {
+      .page-title-bar { padding: 70px 20px 50px; }
+      .page-title-bar h1 { font-size: 2.2rem; }
+      .main-content { padding: 40px 20px; margin-top: -30px; }
+      h2 { font-size: 1.75rem; }
+    }
+
+    @media (max-width: 480px) {
+      .page-title-bar h1 { font-size: 1.9rem; }
+      h2 { font-size: 1.6rem; }
+    }
+  

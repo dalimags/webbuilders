@@ -1,0 +1,203 @@
+
+
+
+/* Orange Title Bar */
+.orange-title-bar {
+    background: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 80px 20px 70px;
+}
+
+.orange-title-bar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.orange-title-bar h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+/* Portfolio General Styles */
+.portfolio-section {
+    padding: 60px 0;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.portfolio-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Flex Row Layout */
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    gap: 40px;
+}
+
+.portfolio-item.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Text Content */
+.portfolio-text {
+    flex: 1;
+}
+
+.portfolio-text h2 {
+    font-size: 32px;
+    font-weight: 900;
+    color: #ff6a00; /* Orange color from images */
+    line-height: 1.2;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.portfolio-text h2 span {
+    color: #ff6a00;
+}
+
+.orange-divider {
+    width: 80px;
+    height: 3px;
+    background-color: #ff6a00;
+    margin-bottom: 25px;
+}
+
+/* Demo Button */
+.demo-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ff6a00;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(255, 106, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.demo-btn i {
+    margin-right: 8px;
+}
+
+.demo-btn:hover {
+    transform: scale(1.05);
+    background-color: #e55c00;
+}
+
+/* Image Section with Shadow */
+.portfolio-image {
+    flex: 1.2;
+    text-align: center;
+}
+
+.portfolio-image img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15)); /* Laptop shadow effect */
+}
+
+/* Notice Box Styling */
+.notice-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.notice-box {
+    max-width: 800px;
+    padding: 60px;
+    border: 3px solid #ff6a00;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.notice-box h3 {
+    color: #ff6a00;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.notice-box p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.notice-line {
+    width: 40px;
+    height: 2px;
+    background-color: #ff6a00;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-item, .portfolio-item.reverse {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .orange-divider {
+        margin: 0 auto 20px auto;
+    }
+
+    .portfolio-text h2 {
+        font-size: 26px;
+    }
+}
+
+.portfolio-image {
+    animation: floatUpDown 3s ease-in-out infinite;
+}
+
+/* Keyframes */
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
